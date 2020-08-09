@@ -108,30 +108,6 @@ for i in range(n):
     eval("alist.append({})".format('a' + str(i)))
 alist_index = [i for i in range(n)]
 
-
-[2, 12, 34, 9, 57, 89, 21, 58, 99, 45, 62, 77]
-    #   "21 45 77 28 77 98 2 9 34 12 89 99".split()
-ans = [2, 12, 34, 9, 57, 89, 21, 62, 99, 45, 58, 77]
-a = [2, 12, 34, 9, 57, 89, 21, 62, 99, 45, 58, 77]
-b = [9, 57, 89, 2, 12, 34, 21, 45, 99, 58, 62, 77]
-print(sorted(a))
-print(sorted(b))
-# print(sorted(ans))
-# [2, 9, 12, 21, 34, 45, 57, 58, 62, 77, 89, 99]
-ans = "2 12 89 9 34 57 21 62 77 45 58 99".split()
-ans = [int(i) for i in ans]
-print(sorted(ans))
-
-check = ''.join(['1' if i in ans else '0' for i in range(n)])
-summ = 0
-for i in range(len(check)):
-    summ += int(check[i]) * alist[i]
-print(summ)
-if summ == target:
-    print('solved!')
-
-# ans = "21 45 77 28 77 98 2 9 34 12 89 99".split()
-# ss = 0
-# for i in ans:
-#     ss += alist[int(i)]
-# print(ss)
+with open('data.txt', 'w') as f:
+    for i in alist:
+        f.write(str(i) + '\n')

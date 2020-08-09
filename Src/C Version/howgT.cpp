@@ -20,8 +20,8 @@ using namespace std;
 typedef long long int ll;
 typedef unsigned long int unint;
 
-const unint N = 140;
-const unint Hamingweight = 16;
+const unint N = 180;
+const unint Hamingweight = 20;
 bool result = false;
 
 struct QuarterKnapsack
@@ -406,7 +406,7 @@ void howgrave(vector<mpz_t *> elements, mpz_t target, int K, int threadNumber)
     default_random_engine e(time(0));
     uniform_real_distribution<double> u(ll, rr);
     int M = (int)u(e);
-    M = pow(2, 20);
+    M = pow(2, 32);
     cout << "Mod: " << M << endl;
 
     cout << "init module" << endl;
@@ -463,7 +463,7 @@ int main(int argc, char **argv)
 {
     FILE *fp;
     char StrLine[1024];
-    if ((fp = fopen("./data140", "r")) == NULL)
+    if ((fp = fopen("./data", "r")) == NULL)
     {
         cout << ("[-]Error, can't open file") << endl;
         return -1;

@@ -107,6 +107,7 @@ alist = []
 for i in range(n):
     eval("alist.append({})".format('a' + str(i)))
 
+print(alist)
 ans = [0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
        0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 1, 0, 0, 0, 0, 0,

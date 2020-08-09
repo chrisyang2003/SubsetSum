@@ -12,6 +12,5 @@ for i in range(len(blist)):
         blist[i] += [N * alist[i], N]
     else:
         blist[i] = [0 for i in range(n)]
-        blist[i] += [-(N * s), -(k * N)]
-# for i in blist:
-#     print(i)
+        blist[i] += [N * s, k * N]
+

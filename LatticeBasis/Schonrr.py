@@ -11,5 +11,5 @@ for i in range(len(blist)):
     else:
         blist[i] = [1 for i in range(n)]
         blist[i] += [n * s, 1]
-# for i in blist:
-#     print(i)
+for i in blist:
+    print(i)
